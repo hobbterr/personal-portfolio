@@ -140,7 +140,6 @@ function HomePage({ onOpenCategory, onOpenWork, onOpenShowreel, onToggleMenu }) 
       <Categories onOpenCategory={onOpenCategory} />
       <FeaturedWorks works={featuredWorks} onOpenWork={onOpenWork} />
       <Contact />
-      <BottomDock />
     </>
   );
 }
@@ -163,10 +162,6 @@ function Hero({ onOpenShowreel, onToggleMenu }) {
 
   return (
     <section className="hero-section">
-      <header className="mobile-status" aria-hidden="true">
-        <span>9:41</span>
-        <span>●●●  Wi-Fi  ▰</span>
-      </header>
       <nav className="hero-nav" aria-label="页面导航">
         <a className="logo-mark" href="#top" aria-label="回到首页">
           Hi, I'm 糊涂夹子
@@ -182,7 +177,6 @@ function Hero({ onOpenShowreel, onToggleMenu }) {
           <p>VISUAL DESIGN<br />PORTFOLIO</p>
         </div>
         <h1>视觉设计<br />作品集</h1>
-        <p className="hero-intro">我是一名专注品牌视觉与活动视觉的视觉设计师。</p>
       </div>
 
       <div className="hero-showreel" aria-label="2025 Showreel 视频预览">
@@ -212,7 +206,7 @@ function About() {
       <SectionTitle title="个人介绍" ghost="ABOUT" />
       <div className="about-panel">
         <p>
-          我关注品牌与活动在第一眼中的视觉记忆：主视觉、传播物料、社交媒体图形、线下活动画面与整套视觉延展。
+          我是一名专注品牌视觉与活动视觉的视觉设计师。我关注品牌与活动在第一眼中的视觉记忆：主视觉、传播物料、社交媒体图形、线下活动画面与整套视觉延展。
         </p>
         <div className="about-tags">
           <span>品牌主视觉</span>
@@ -377,11 +371,9 @@ function Contact() {
     <footer className="contact-section">
       <SectionTitle title="联系方式" ghost="CONTACT" />
       <div className="contact-panel">
-        <a href="mailto:yourname@example.com">yourname@example.com</a>
-        <span>微信：your-wechat-id</span>
-        <a href="#">站酷</a>
-        <a href="#">Behance</a>
-        <a href="#">小红书</a>
+        <span>微信：Flower__travel</span>
+        <a href="https://www.xiaohongshu.com/user/profile/5c9560bc000000001202fcc3">小红书</a>
+        <a href="https://www.behance.net/yan1989">Behance</a>
       </div>
     </footer>
   );

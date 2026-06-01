@@ -91,7 +91,6 @@ a {
   background: linear-gradient(transparent, rgba(244, 243, 236, 0.42), transparent);
 }
 
-.mobile-status,
 .hero-nav,
 .category-topbar {
   display: flex;
@@ -99,17 +98,10 @@ a {
   justify-content: space-between;
 }
 
-.mobile-status {
-  padding: 0 0.45rem;
-  color: #fff;
-  font-size: 0.94rem;
-  font-weight: 700;
-}
-
 .hero-nav {
   position: relative;
   z-index: 20;
-  margin-top: 1.9rem;
+  margin-top: 0;
 }
 
 .logo-mark {
@@ -208,15 +200,6 @@ a {
     2px 0 rgba(182, 255, 25, 0.35),
     -2px 0 rgba(126, 69, 255, 0.28),
     0 0 16px rgba(255, 255, 255, 0.18);
-}
-
-.hero-intro {
-  max-width: 18rem;
-  margin: 1.7rem 0 0;
-  color: rgba(244, 243, 236, 0.9);
-  font-size: 1.04rem;
-  font-weight: 500;
-  line-height: 1.8;
 }
 
 .hero-showreel {
@@ -606,7 +589,7 @@ a {
 }
 
 .contact-section {
-  padding-bottom: 7rem;
+  padding-bottom: 3.5rem;
 }
 
 .contact-panel {
@@ -851,10 +834,6 @@ a {
   .hero-section {
     min-height: 860px;
     padding: 2rem 4rem 3rem;
-  }
-
-  .mobile-status {
-    display: none;
   }
 
   .hero-copy {
