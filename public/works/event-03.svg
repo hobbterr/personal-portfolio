@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1300 900">
+  <rect width="1300" height="900" fill="#06060c"/>
+  <g fill="none" stroke="#725cff" stroke-opacity=".32"><path d="M180 160h940v580H180z"/><path d="M260 240h780v420H260z"/><path d="M340 320h620v260H340z"/></g>
+  <path d="M196 705 1102 198" stroke="#9fe8ff" stroke-width="4" stroke-opacity=".74"/>
+  <circle cx="420" cy="455" r="120" fill="#7d56ff" opacity=".5"/>
+  <circle cx="830" cy="455" r="160" fill="#23d7ff" opacity=".24"/>
+  <text x="180" y="815" fill="#fff" font-family="Arial" font-size="66" font-weight="700">EXHIBITION VISUAL</text>
+</svg>

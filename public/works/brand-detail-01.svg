@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#07070e"/>
+  <rect x="90" y="90" width="1420" height="720" fill="#100b2d" stroke="#725cff" stroke-opacity=".45"/>
+  <circle cx="1050" cy="360" r="280" fill="#7f5cff" opacity=".45"/>
+  <circle cx="760" cy="460" r="180" fill="#28d9ff" opacity=".32"/>
+  <rect x="180" y="190" width="460" height="64" fill="#f4f0ff"/>
+  <rect x="180" y="288" width="280" height="22" fill="#9fe8ff"/>
+  <rect x="180" y="670" width="1080" height="2" fill="#9fe8ff" opacity=".55"/>
+  <text x="180" y="610" fill="#fff" font-family="Arial" font-size="78" font-weight="700">VISUAL SYSTEM</text>
+</svg>

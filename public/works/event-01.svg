@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06060b"/><stop offset=".55" stop-color="#31105e"/><stop offset="1" stop-color="#06324a"/></linearGradient></defs>
+  <rect width="900" height="1200" fill="url(#g)"/>
+  <path d="M95 1030 792 176M148 1068 845 214M42 988 739 134" stroke="#9fe8ff" stroke-opacity=".42" stroke-width="2"/>
+  <circle cx="450" cy="560" r="250" fill="none" stroke="#8b5cff" stroke-width="90" stroke-opacity=".56"/>
+  <circle cx="450" cy="560" r="112" fill="#9fe8ff" opacity=".72"/>
+  <text x="82" y="124" fill="#9fe8ff" font-family="Arial" font-size="24" letter-spacing="7">EVENT VISUAL</text>
+  <text x="82" y="1080" fill="#fff" font-family="Arial" font-size="76" font-weight="700">LIVE POSTER</text>
+</svg>

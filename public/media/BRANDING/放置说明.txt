@@ -1,0 +1,15 @@
+品牌视觉素材放置说明
+
+如果后续品牌视觉项目也使用视频、GIF 或大量图片，建议按品牌建立英文文件夹。
+
+示例：
+public/media/BRANDING/AURORA/AURORA-Brand System.mp4
+public/media/BRANDING/HYPER/HYPER-Key Visual.jpg
+
+works.js 中的路径写法：
+/media/BRANDING/AURORA/AURORA-Brand System.mp4
+
+注意：
+1. 文件夹名建议使用英文品牌名。
+2. 文件名建议使用英文，不使用中文和空格以外的特殊符号。
+3. 如果是活动视觉素材，请放到 public/media/EVENT 对应品牌文件夹。

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200">
+  <rect width="1000" height="1200" fill="#08070f"/>
+  <circle cx="500" cy="420" r="310" fill="#7d56ff" opacity=".34"/>
+  <circle cx="594" cy="512" r="260" fill="#22d5ff" opacity=".24"/>
+  <rect x="100" y="120" width="800" height="960" fill="none" stroke="#f4f0ff" stroke-opacity=".22"/>
+  <path d="M208 820h584M208 872h410M208 924h500" stroke="#9fe8ff" stroke-width="18" stroke-opacity=".76"/>
+  <text x="100" y="105" fill="#9fe8ff" font-family="Arial" font-size="22" letter-spacing="7">BRANDING</text>
+  <text x="100" y="1030" fill="#fff" font-family="Arial" font-size="74" font-weight="700">CAMPAIGN</text>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200">
+  <rect width="1200" height="1200" fill="#050509"/>
+  <rect x="150" y="150" width="900" height="900" rx="0" fill="#101026"/>
+  <rect x="220" y="220" width="330" height="330" fill="#7d56ff"/>
+  <rect x="650" y="220" width="330" height="330" fill="#9fe8ff"/>
+  <rect x="220" y="650" width="330" height="330" fill="#f4f0ff"/>
+  <rect x="650" y="650" width="330" height="330" fill="#26135f"/>
+  <text x="150" y="1120" fill="#fff" font-family="Arial" font-size="60" font-weight="700">SOCIAL GRAPHICS</text>
+</svg>

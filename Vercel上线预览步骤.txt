@@ -1,0 +1,205 @@
+Vercel 上线预览步骤
+
+用途：
+把这个个人作品集网站发布到线上，生成一个可以用手机或电脑访问的网址。
+
+
+一、上线前准备
+
+1. 确认本地网站可以正常运行
+
+在项目根目录运行：
+
+npm.cmd run dev
+
+然后打开：
+
+http://localhost:5173/
+
+确认页面、图片、视频、菜单、分类页都正常。
+
+
+2. 确认可以正常构建
+
+在项目根目录运行：
+
+npm.cmd run build
+
+如果看到类似：
+
+built in ...
+
+说明构建成功。
+
+
+二、准备 GitHub
+
+1. 注册或登录 GitHub
+
+网址：
+https://github.com/
+
+
+2. 新建一个仓库
+
+点击右上角 + 号，选择 New repository。
+
+Repository name 可以写：
+
+personal-portfolio
+
+或者：
+
+visual-design-portfolio
+
+建议选择 Public。
+
+不要勾选 Add a README file，因为项目里已经有文件。
+
+点击 Create repository。
+
+
+三、把项目上传到 GitHub
+
+在项目根目录打开 PowerShell。
+
+项目路径：
+E:\Codex\personal_work_website
+
+依次运行以下命令：
+
+git init
+
+git add .
+
+git commit -m "init portfolio website"
+
+git branch -M main
+
+然后复制 GitHub 页面上给你的仓库地址。
+
+地址类似：
+
+https://github.com/你的用户名/personal-portfolio.git
+
+运行：
+
+git remote add origin https://github.com/你的用户名/personal-portfolio.git
+
+git push -u origin main
+
+
+四、部署到 Vercel
+
+1. 打开 Vercel
+
+网址：
+https://vercel.com/
+
+
+2. 使用 GitHub 登录
+
+点击 Continue with GitHub。
+
+如果 Vercel 要求授权 GitHub，选择同意。
+
+
+3. 导入项目
+
+进入 Vercel 后，点击：
+
+Add New...
+
+选择：
+
+Project
+
+找到刚才上传的 GitHub 仓库。
+
+点击 Import。
+
+
+4. 确认项目设置
+
+Framework Preset：
+Vite
+
+Build Command：
+npm run build
+
+Output Directory：
+dist
+
+Install Command：
+npm install
+
+一般 Vercel 会自动识别，不需要手动改。
+
+
+5. 点击 Deploy
+
+等待部署完成。
+
+成功后，Vercel 会给你一个网址。
+
+类似：
+
+https://personal-portfolio.vercel.app/
+
+这个网址就可以用手机打开预览。
+
+
+五、以后如何更新网站
+
+如果你修改了图片、作品资料、页面代码，需要重新上传到 GitHub。
+
+在项目根目录运行：
+
+git add .
+
+git commit -m "update website"
+
+git push
+
+Vercel 会自动重新部署。
+
+部署完成后，刷新线上网址即可看到更新。
+
+
+六、注意事项
+
+1. 视频文件较大时，首次打开可能比较慢。
+
+建议网页视频尽量使用 H.264 编码，并控制体积。
+
+
+2. node_modules 不需要上传
+
+如果 GitHub 上传很慢，检查是否有 .gitignore 文件。
+如果没有，建议添加 .gitignore，并写入：
+
+node_modules
+dist
+
+
+3. 如果 Vercel 部署失败
+
+先在本地运行：
+
+npm.cmd run build
+
+如果本地都失败，说明项目代码需要先修复。
+
+
+4. 如果视频在线上不能播放
+
+优先确认是否使用 H.264 版本。
+文件名通常带：
+
+-h264.mp4
+
+
+5. 如果线上看不到最新内容
+
+等待 Vercel 部署完成后，手机浏览器强制刷新。
+也可以换无痕窗口打开。

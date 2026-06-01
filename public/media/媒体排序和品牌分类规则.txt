@@ -1,0 +1,76 @@
+媒体排序和品牌分类规则
+
+1. 作品显示顺序
+
+网站里的作品顺序由 src/works.js 决定。
+
+也就是说：
+works.js 里哪个作品写在前面，网页里就先显示哪个作品。
+如果你想调整作品顺序，直接移动 works.js 里整段作品资料的位置即可。
+
+
+2. 首页精选作品顺序
+
+首页“精选作品”只显示 featured: true 的作品。
+
+显示顺序同样按照 works.js 中的先后顺序。
+
+例如：
+第一个 featured: true 的作品，会排在首页精选作品最前面。
+
+
+3. 品牌分类顺序
+
+分类页顶部的品牌筛选按钮，也是根据 works.js 自动生成的。
+
+规则是：
+系统会从当前分类的作品里，从上到下读取 brand 字段。
+第一次出现的品牌排在前面。
+重复出现的品牌不会重复显示。
+
+例如 works.js 中的活动视觉作品品牌顺序是：
+Babyback
+Babyback
+Backup
+Future Creation
+
+那么品牌筛选会显示：
+全部
+Babyback
+Backup
+Future Creation
+
+
+4. 怎样调整品牌排序
+
+如果你想让某个品牌排在更前面，就把这个品牌的第一个作品移动到 works.js 更靠前的位置。
+
+例如想让 Future Creation 排在 Backup 前面：
+就把 Future Creation 的任意一个作品，移动到 Backup 的第一个作品前面。
+
+
+5. 文件夹顺序不等于网页顺序
+
+public/media 里的文件夹顺序不会直接决定网页显示顺序。
+
+网页最终显示顺序只看 src/works.js。
+
+
+6. 推荐管理方式
+
+如果你希望首页更好看：
+把最强的 4 到 8 个作品设置为 featured: true。
+
+如果你希望分类页更清楚：
+同一品牌的作品最好放在 works.js 中相邻的位置。
+
+如果你希望品牌筛选更好用：
+每个作品的 brand 字段要保持完全一致。
+
+例如不要混写：
+Future Creation
+FutureCreation
+未来造物
+
+统一写成：
+Future Creation

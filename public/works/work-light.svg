@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760">
+  <rect width="900" height="760" fill="#050506"/>
+  <g fill="none" stroke="#f4f3ec" stroke-opacity=".25"><path d="M130 120h640v520H130z"/><path d="M210 200h480v360H210z"/><path d="M290 280h320v200H290z"/></g>
+  <path d="M130 620 770 140" stroke="#b6ff19" stroke-width="6" opacity=".8"/>
+  <circle cx="350" cy="390" r="95" fill="#7e45ff" opacity=".58"/>
+  <circle cx="590" cy="390" r="135" fill="#b6ff19" opacity=".18"/>
+  <text x="148" y="690" fill="#f4f3ec" font-family="Arial" font-size="62" font-weight="900">LIGHT FIELD</text>
+</svg>

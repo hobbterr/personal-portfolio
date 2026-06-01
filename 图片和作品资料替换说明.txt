@@ -1,0 +1,197 @@
+个人作品集网站：图片和作品资料替换说明
+
+你平时主要需要改几个地方：
+
+1. 图片文件夹
+
+路径：
+E:\Codex\personal_work_website\public\works
+
+把你的作品图片、GIF 放到这个文件夹里。
+
+如果是视频素材，建议放到：
+
+品牌视觉视频：
+E:\Codex\personal_work_website\public\media\BRANDING
+
+活动视觉视频：
+E:\Codex\personal_work_website\public\media\EVENT
+
+视频建议按品牌建立英文文件夹。
+
+建议文件名使用英文、数字、短横线，不要使用中文和空格。
+
+推荐示例：
+brand-aurora-cover.jpg
+brand-aurora-01.jpg
+event-music-cover.gif
+event-music-detail-01.jpg
+
+不推荐示例：
+我的作品 01.jpg
+活动视觉最终版.gif
+
+
+2. 作品资料文件
+
+路径：
+E:\Codex\personal_work_website\src\works.js
+
+这个文件里保存所有作品资料。
+你可以复制一整个作品对象，然后修改里面的内容。
+
+
+作品资料模板：
+
+{
+  id: 1,
+  title: "作品名称",
+  type: "品牌视觉",
+  category: "branding",
+  brand: "品牌英文名",
+  cover: "/works/brand-aurora-cover.jpg",
+  images: [
+    "/works/brand-aurora-cover.jpg",
+    "/works/brand-aurora-01.jpg",
+    "/works/brand-aurora-02.jpg"
+  ],
+  mediaType: "image",
+  featured: true
+}
+
+
+每一项是什么意思：
+
+id
+每个作品的编号，不能重复。
+例如第一个作品是 1，第二个作品是 2，第三个作品是 3。
+
+title
+作品名称，会显示在首页、分类页、预览页。
+
+type
+页面上显示的作品类型。
+目前建议只写：
+品牌视觉
+活动视觉
+
+category
+控制作品属于哪个分类页。
+品牌视觉写：
+branding
+
+活动视觉写：
+event
+
+注意：category 这里必须写英文，不能写中文。
+
+brand
+控制分类页里的品牌筛选。
+同一个品牌的作品，brand 要写成完全一样。
+
+例如：
+Babyback
+Backup
+Future Creation
+RHR
+
+cover
+作品封面图。
+图片放在 public\works 里面以后，路径要写成：
+/works/你的图片文件名.jpg
+
+例如图片实际位置是：
+E:\Codex\personal_work_website\public\works\brand-aurora-cover.jpg
+
+那么 cover 写：
+/works/brand-aurora-cover.jpg
+
+images
+点击作品后，大图预览里显示的图片。
+可以只放一张，也可以放多张。
+
+只放一张：
+images: ["/works/brand-aurora-cover.jpg"]
+
+放多张：
+images: [
+  "/works/brand-aurora-cover.jpg",
+  "/works/brand-aurora-01.jpg",
+  "/works/brand-aurora-02.jpg"
+]
+
+featured
+控制这个作品是否显示在首页“精选作品”。
+
+显示在首页：
+featured: true
+
+不显示在首页，只显示在分类页：
+featured: false
+
+
+常见问题：
+
+1. 为什么换了图片但页面没变？
+先检查图片路径和文件名是否完全一致。
+文件名大小写、横线、后缀都要一致。
+
+2. jpg、png、webp、gif 都可以吗？
+可以。
+GIF 也像普通图片一样填写到 cover 或 images 里。
+
+3. 首页精选作品太多怎么办？
+把不想显示在首页的作品改成：
+featured: false
+
+4. 想新增作品怎么办？
+复制一个作品对象，粘贴到 works.js 的数组里，然后修改 id、title、year、cover、images 等内容。
+
+5. 修改后需要重新安装依赖吗？
+不需要。
+只要预览服务正在运行，保存文件后网页通常会自动刷新。
+
+
+视频作品模板：
+
+{
+  id: 100,
+  title: "Product Release",
+  type: "活动视觉",
+  category: "event",
+  brand: "Future Creation",
+  cover: "/media/EVENT/Future Creation/Future Creation-Product Release.mp4",
+  poster: "/media/EVENT/Future Creation/Future Creation-Product Release-poster.jpg",
+  images: ["/media/EVENT/Future Creation/Future Creation-Product Release.mp4"],
+  mediaType: "video",
+  featured: false
+}
+
+视频命名建议：
+品牌英文名-作品英文名.mp4
+
+例如：
+Future Creation-Product Release.mp4
+
+视频封面 poster：
+视频作品可以填写 poster 字段。
+poster 只给视频作品使用，图片作品不需要。
+
+你可以双击项目根目录里的：
+生成视频封面.bat
+
+它会自动从每个视频截取约第 20 帧，生成同目录下的封面图。
+
+示例：
+Future Creation-Product Release.mp4
+
+会生成：
+Future Creation-Product Release-poster.jpg
+
+脚本是增量执行：
+如果 poster 已经存在，就不会重复生成。
+
+生成封面后，如果你不想手动给 works.js 填 poster，可以再双击：
+同步视频封面到作品数据.bat
+
+它会扫描已经生成的 -poster.jpg，并自动给对应视频作品补上 poster 字段。

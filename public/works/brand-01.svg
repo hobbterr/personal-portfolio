@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#070712"/><stop offset=".45" stop-color="#17103d"/><stop offset="1" stop-color="#0b2446"/></linearGradient>
+    <radialGradient id="r" cx=".72" cy=".24" r=".52"><stop stop-color="#8a5cff"/><stop offset=".45" stop-color="#28d9ff" stop-opacity=".52"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g)"/>
+  <rect x="108" y="112" width="984" height="676" fill="none" stroke="#b7a7ff" stroke-opacity=".24"/>
+  <circle cx="780" cy="290" r="310" fill="url(#r)"/>
+  <path d="M155 680C320 525 451 618 612 458c151-151 278-135 437-244" fill="none" stroke="#95efff" stroke-width="3" stroke-opacity=".65"/>
+  <text x="108" y="845" fill="#fff" font-family="Arial" font-size="54" font-weight="700">BRAND VISUAL</text>
+  <text x="108" y="92" fill="#9fe8ff" font-family="Arial" font-size="22" letter-spacing="8">PORTFOLIO COVER 01</text>
+</svg>

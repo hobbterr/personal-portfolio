@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760">
+  <rect width="900" height="760" fill="#050506"/>
+  <path d="M55 500c190-150 322-170 478-78 104 61 211 34 312-58" stroke="#f1f3ff" stroke-width="32" fill="none" opacity=".42"/>
+  <circle cx="670" cy="250" r="210" fill="#b6ff19" opacity=".14"/>
+  <rect x="320" y="210" width="300" height="390" fill="#07070a" stroke="#222"/>
+  <path d="M385 210c22-88 150-90 170 0" stroke="#b6ff19" stroke-width="13" fill="none"/>
+  <path d="M420 380 470 340 520 380 470 430Z" fill="#b6ff19"/>
+  <text x="358" y="505" fill="#b6ff19" font-family="Arial" font-size="48" font-weight="800">MUTANT</text>
+</svg>

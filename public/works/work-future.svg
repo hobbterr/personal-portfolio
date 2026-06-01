@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760">
+  <rect width="900" height="760" fill="#040407"/>
+  <rect x="95" y="110" width="710" height="470" fill="#101016" stroke="#7e45ff" stroke-opacity=".7"/>
+  <rect x="155" y="178" width="290" height="290" fill="#b6ff19" opacity=".72"/>
+  <rect x="492" y="178" width="250" height="48" fill="#f4f3ec"/>
+  <rect x="492" y="265" width="180" height="26" fill="#7e45ff"/>
+  <rect x="492" y="320" width="225" height="26" fill="#b6ff19"/>
+  <text x="154" y="668" fill="#f4f3ec" font-family="Arial" font-size="66" font-weight="900">FUTURE TALK</text>
+</svg>
